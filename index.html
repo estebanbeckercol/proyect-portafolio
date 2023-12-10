@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Andres Esteban Ruiz</title>
+    <link rel="shortcut icon" href="./icons/portafolio.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stilos.css">
+
+
+</head>
+
+
+<body>
+   
+    
+
+    <i class='iconShowMenu bx bx-menu'></i>
+
+    <nav class="navbar">
+        <span><a href="#home">Esteban Ruiz</a></span>
+
+           <div>
+            <span class="en">English</span>
+            <input type="checkbox"   class="check" >
+            <span class="es">Spanish</span>
+           </div>
+        <ul class="navbar__menu">
+          
+            <li><a class="link link--active"  href="#home">Home</a></li>
+            <li><a class="link"  href="#about">About</a></li>
+            <li><a class="link"  href="#skills">Skills</a></li>
+            <li><a class="link"  href="#portfolio">Portfolio</a></li>
+            <li><a class="link"  href="#contact">contact</a></li>
+            
+            <li class="iconTheme">🌞</li>
+          
+           
+        </ul>
+    </nav>
+
+    <main class="container__principal">
+        <section id="home" class="hidden">
+          <h1 class="home_title">Hello, my name is <span class="span__h1"> Esteban Ruiz</span>  I am a developer<span class="span__h1">full stack </span></h1>
+          <button type="button">
+              <a href="#contact"><img src="./public/icons/mail.svg" alt="icono de mail"> Contact me</a>
+            </button>
+        </section>
+        <section id="about" class="hidden">
+            
+            <h2>Who I Am</h2>
+            <p>Greetings! I'm Andrés Esteban Ruiz!
+              a versatile Full Stack developer
+            </p>
+           <p>
+                  My journey began with a deep-rooted fascination with technology and has evolved into a professional dedication to creating elegant solutions that combine design and functionality. From creating eye-catching interfaces to architecting robust databases and optimizing server performance, I enjoy the challenge of mastering the entire software development lifecycle.
+                  As for the front-end, I love bringing designs to life, meticulously coding with HTML, CSS and JavaScript to create beautiful and intuitive user interfaces. I have experience with frameworks such as ReactJS, which allow me to create dynamic and responsive applications that exceed expectations.
+                  On the other hand, I revel in the complexities of back-end development. Leveraging technologies like Node.js, I build the foundations on which applications operate. Scalability, security and efficiency are at the core of my back-end strategy, ensuring a robust infrastructure that can handle a wide range of tasks.
+           </p>
+               
+               
+        </section>
+
+        <section id="skills" class="hidden">
+          <h2>Skills</h2>
+            <div class="logo__tech">
+                <div class="skill_logo">
+                    <img src="./logos/logo-javaScript.png" alt="logo-javaScript">
+                </div>
+                <div class="skill_logo">
+                    <img src="./logos/HTML5_logo_and_wordmark.png" alt="logo-html">
+                </div>
+                <div  class="skill_logo">
+                    <img src="./logos/css_logo.png" alt="logo-css">
+                </div>
+                <div  class="skill_logo">
+                    <img src="./logos/react_logo.png" alt="logo-react">
+                </div>
+                <div  class="skill_logo">
+                    <img src="./logos/Node__logo.png" alt="logo-node">
+                </div>
+            </div>
+          
+        </section>
+
+        <section id="portfolio" class="hidden">
+
+            <h2 class="title-portafolio">Portfolio</h2>
+            <div class="portfolios">
+                <div class="portfolio">
+                    <figure>
+                        <a href="https://effulgent-chimera-5f14d9.netlify.app/" target="noopener">
+                            <img src="./images/e-commerce-app.png" alt="porta1">
+                            <div class="capa">
+                                <h3>E-Commerce App</h3>
+                                <span> Made with HTML 5, Css and JavaScript "Vanilla"</span>
+                            </div>
+                        </a>
+                    </figure>
+                    
+                </div>
+
+                <div class="portfolio">
+                    <figure>
+                        <a href="https://bucolic-lokum-108209.netlify.app/" target="noopener">
+                            <img src="./images/rick-and-morty.png" alt="porta4">
+                             <div class="capa">
+                                <h3>rick-and-morty</h3>
+                                <span> Made with ReactJS and Css</span>
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="portfolio">
+                  <figure>
+                    <a href="https://gorgeous-cucurucho-809701.netlify.app/" target="noopener">
+                        <img src="./images/app-clima.png" alt="porta2">
+                         <div class="capa">
+                                <h3>Weather App</h3>
+                                <span> Made with ReactJS and Css</span>
+                            </div>
+                       </a>
+                  </figure>
+                </div>
+                <div class="portfolio">
+                    <figure>
+                        <a href="https://dulcet-sorbet-c5d93e.netlify.app/" target="noopener">
+                            <img src="./images/galleta-fortuna-app.png" alt="porta3">
+                             <div class="capa">
+                                <h3>Fortune cookie</h3>
+                                <span> Made with ReactJS and Css</span>
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+                
+            
+            </div>
+       
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact me</h2>
+            <form class="form" data-netlify="true">
+                <input type="text" placeholder="Enter your Name" name="nameUser" id="nameUser" required>
+
+                <input type="text" placeholder="Enter your email" name="emailUser" id="emailUser" required>
+
+                <textarea name="commentUser" id="commentUser" cols="30" rows="10" placeholder="Write me..."></textarea>
+                <button type="submit" class="btn"><span>Send</span></button>
+                <div class="icon__div">
+                    <a  class="icons__red" href="https://www.linkedin.com/in/andr%C3%A9s-esteban-ruiz-alzate-b8a898286/" target="noopener"><img src="./icons/linkedin.svg" alt="icono linkedin"></a>
+                    <a class="icons__red" href="https://github.com/dashboard" target="noopener"><img src="./icons/iconmonstr-github-1.svg"
+                        alt="icono github"></a>
+                    <a class="icons__red" href="https://mail.google.com/mail/u/1/#sent?compose=new"
+                    target="noopener"><img src="./icons/gmail-icon.svg" alt="icono Gmail"></a>
+                    <a class="icons__red" href="" target="noopener"><img src="./icons/phone.svg" alt="icono Gmail"></a>
+                  </div>
+            </form>
+        </section>
+    </main>
+   
+    <script  src="/main.js"></script>
+</body>
+    </html>
