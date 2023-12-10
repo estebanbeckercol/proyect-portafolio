@@ -66,31 +66,17 @@ iconTheme.addEventListener("click", () => {
 })
 
 //idioma
-document.addEventListener('DOMContentLoaded', function() {
-  const check = document.querySelector(".check");
+const check=document.querySelector(".check");
+check.addEventListener('click',idioma, e =>{
+  e.preventDefault()
+})
 
-  // Cargar el estado del idioma almacenado en localStorage
-  const savedLanguage = localStorage.getItem("language");
-  if (savedLanguage === "es") {
-    check.checked = true;
+function idioma(){
+  let id = check.checked;
+  if (id===true){
+    location.href="./es/index.html"
+  }else{
+    location.href="./index.html"
   }
-
-  check.addEventListener('click', function (e) {
-    e.preventDefault();
-    idioma();
-  });
-
-  function idioma() {
-    let id = check.checked;
-    if (id === true) {
-      // Almacenar el estado del idioma en localStorage
-      localStorage.setItem("language", "es");
-      window.location.href = "./es/index.html";
-    } else {
-      localStorage.setItem("language", "en");
-      window.location.href = "./index.html";
-    }
-  }
-});
-
-
+ 
+}
