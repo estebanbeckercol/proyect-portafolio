@@ -66,6 +66,7 @@ iconTheme.addEventListener("click", () => {
 })
 
 //idioma
+
 const check=document.querySelector(".check");
 check.addEventListener('click',idioma, e =>{
   e.preventDefault()
